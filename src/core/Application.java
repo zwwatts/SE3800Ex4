@@ -17,6 +17,15 @@ public class Application {
 				case "add":
 					calc.add();
 					break;
+				case "sub":
+					calc.sub();
+					break;
+				case "mul":
+					calc.mul();
+					break;
+				case "div":
+					calc.div();
+					break;
 
 				default:
 					break;
