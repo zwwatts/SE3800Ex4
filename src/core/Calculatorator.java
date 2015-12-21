@@ -1,5 +1,7 @@
 package core;
 
+import java.util.List;
+
 /**
  * SE3800-002
  * Exercise 3
@@ -10,24 +12,44 @@ package core;
 
 public class Calculatorator {
 	
-	public int add(){
-		 
-		return 0;
+	public int add(int[] numbers){
+		 int result = 0;
+		 for(int number : numbers){
+			 result += number;
+		 }
+		return result;
 	}
 	
-	public int sub() {
-		
-		return 0;
+	public int sub(int[] numbers) {
+		 int result = 0;
+		 for(int number : numbers){
+			 result -= number;
+		 }
+		return result;
 	}
 	
-	public int mul() {
-		
-		return 0;
+	public int mul(int[] numbers) {
+		 int result = 0;
+		 for(int number : numbers){
+			 result *= number;
+		 }
+		return result;
 	}
 	
-	public int div() {
-		
-		return 0;
+	public int div(int[] numbers) {
+		 int result = 0;
+		 for(int number : numbers){
+			 result /= number;
+		 }
+		return result;
+	}
+	public int exp(int[] numbers){
+		int result = 0;
+		int prevResult = numbers[0];
+		 for(int i=1; i<numbers.length; i++){
+			 prevResult = (int) Math.pow(prevResult, numbers[i]);
+		 }
+		return result;
 	}
 	
 	// TODO: parking the implmentation of this function 
