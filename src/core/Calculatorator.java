@@ -21,35 +21,34 @@ public class Calculatorator {
 	}
 	
 	public int sub(int[] numbers) {
-		 int result = 0;
-		 for(int number : numbers){
-			 result -= number;
+		int prevResult = numbers[0];
+		 for(int i=1; i<numbers.length; i++){
+			 prevResult -= numbers[i];
 		 }
-		return result;
+		return prevResult;
 	}
 	
 	public int mul(int[] numbers) {
-		 int result = 0;
-		 for(int number : numbers){
-			 result *= number;
+		int prevResult = numbers[0];
+		 for(int i=1; i<numbers.length; i++){
+			 prevResult *= numbers[i];
 		 }
-		return result;
+		return prevResult;
 	}
 	
 	public int div(int[] numbers) {
-		 int result = 0;
-		 for(int number : numbers){
-			 result /= number;
+		int prevResult = numbers[0];
+		 for(int i=1; i<numbers.length; i++){
+			 prevResult /= numbers[i];
 		 }
-		return result;
+		return prevResult;
 	}
 	public int exp(int[] numbers){
-		int result = 0;
 		int prevResult = numbers[0];
 		 for(int i=1; i<numbers.length; i++){
 			 prevResult = (int) Math.pow(prevResult, numbers[i]);
 		 }
-		return result;
+		return prevResult;
 	}
 	
 	// TODO: parking the implementation of this function 
