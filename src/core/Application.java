@@ -42,6 +42,9 @@ public class Application {
 				case "exp":
 					calc.exp(numberInputs);
 					break;
+				case "exit":
+					running = false;
+					break;
 				default:
 					break;
 				}

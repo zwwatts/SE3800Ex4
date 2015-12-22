@@ -52,7 +52,7 @@ public class Calculatorator {
 		return result;
 	}
 	
-	// TODO: parking the implmentation of this function 
+	// TODO: parking the implementation of this function 
 	// We discussed possibly having a History object 
 	public String hist() {
 		return "";
