@@ -4,6 +4,7 @@ import java.util.*;
 public class Application {
 	
 	public static void main(String[] args){
+		
 		boolean running = true;
 		Calculatorator calc = new Calculatorator();
 		Scanner stdIn = new Scanner(System.in);
