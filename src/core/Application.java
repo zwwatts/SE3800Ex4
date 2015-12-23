@@ -4,13 +4,14 @@ import java.util.*;
 public class Application {
 	
 	public static void main(String[] args){
-		
+		System.out.println("Starting Up...");
 		boolean running = true;
 		Calculatorator calc = new Calculatorator();
 		Scanner stdIn = new Scanner(System.in);
 		//TODO: figure out the best data structure for history objects
 		ArrayList<StoredCommand> history = new ArrayList<StoredCommand>();
 		while(running){
+			System.out.println("Ready: ");
 			String command = stdIn.nextLine();
 			String[] parsedCommand;
 			try {
@@ -52,6 +53,7 @@ public class Application {
 					for(int j=0; j<history.size(); j++){
 						System.out.println(j + ": " + history.get(j));
 					}
+					break;
 				case "exit":
 					System.out.println("Exiting..");
 					running = false;
