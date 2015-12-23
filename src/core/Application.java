@@ -23,7 +23,14 @@ public class Application {
 				parsedCommand[0] = parsedCommand[0].toLowerCase();
 				for (int i = 0; i < rawInputs.length; i++) {
 				    try {
-				        numberInputs[i] = Integer.parseInt(rawInputs[i]);
+				    	//TODO: validation for histNumber
+				    	if(rawInputs[i].contains("$")){
+				    		rawInputs[i] = rawInputs[i].replace("$", "");
+				    		int histNumber = Integer.parseInt(rawInputs[i]);
+				    		numberInputs[i] = history.get(histNumber).result;
+				    	}else{
+				    		numberInputs[i] = Integer.parseInt(rawInputs[i]);
+				    	}
 				    } catch (NumberFormatException nfe) {
 						// TODO: Elegantly handle this ==============================================================================================
 				    };
