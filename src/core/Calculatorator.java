@@ -36,6 +36,7 @@ public class Calculatorator {
 		return prevResult;
 	}
 	
+	// TODO: Handle div by 0 
 	public int div(int[] numbers) {
 		int prevResult = numbers[0];
 		 for(int i=1; i<numbers.length; i++){
@@ -49,19 +50,5 @@ public class Calculatorator {
 			 prevResult = (int) Math.pow(prevResult, numbers[i]);
 		 }
 		return prevResult;
-	}
-	
-	// TODO: parking the implementation of this function 
-	// We discussed possibly having a History object 
-	public String hist() {
-		return "";
-	}
-	
-	public void clear() {
-		
-	}
-	
-	public void pastRes() {
-		
 	}
 }

@@ -8,7 +8,6 @@ public class Application {
 		boolean running = true;
 		Calculatorator calc = new Calculatorator();
 		Scanner stdIn = new Scanner(System.in);
-		//TODO: figure out the best data structure for history objects
 		ArrayList<StoredCommand> history = new ArrayList<StoredCommand>();
 		while(running){
 			System.out.println("Ready: ");
@@ -17,22 +16,20 @@ public class Application {
 			try {
 				parsedCommand = command.split(" ");
 				
-				//TODO: Check for valid input
 				String[] rawInputs = Arrays.copyOfRange(parsedCommand, 1, parsedCommand.length);
 				int[] numberInputs = new int[rawInputs.length];
 				parsedCommand[0] = parsedCommand[0].toLowerCase();
 				for (int i = 0; i < rawInputs.length; i++) {
 				    try {
-				    	//TODO: validation for histNumber
-				    	if(rawInputs[i].contains("$")){
-				    		rawInputs[i] = rawInputs[i].replace("$", "");
+				    	if(rawInputs[i].contains("!")){
+				    		rawInputs[i] = rawInputs[i].replace("!", "");
 				    		int histNumber = Integer.parseInt(rawInputs[i]);
 				    		numberInputs[i] = history.get(histNumber).result;
 				    	}else{
 				    		numberInputs[i] = Integer.parseInt(rawInputs[i]);
 				    	}
 				    } catch (NumberFormatException nfe) {
-						// TODO: Elegantly handle this ==============================================================================================
+						System.err.println("Invalid history number detected!");
 				    };
 				}
 				switch (parsedCommand[0]) {
@@ -57,19 +54,28 @@ public class Application {
 					history.add(new StoredExpCommand(StoredCommand.COMMAND_TYPE.EXP, calc.exp(numberInputs), numberInputs));
 					break;
 				case "hist":
-					for(int j=0; j<history.size(); j++){
-						System.out.println(j + ": " + history.get(j));
+					if (history.isEmpty()){
+						System.out.println("No saved calculations!");
+					} else {
+						for(int j=0; j<history.size(); j++){
+							System.out.println(j + ": " + history.get(j));
+						}	
 					}
+					break;
+				case "clear":
+					history.clear();
+					System.out.println("All saved calculations have been removed!");
 					break;
 				case "exit":
 					System.out.println("Exiting...");
 					running = false;
 					break;
 				default:
+					System.err.println("Invalid command detected!");
 					break;
 				}
 			} catch (Exception e) {
-				// TODO: Elegantly handle this ==============================================================================================
+				System.err.println("Invalid command detected!");
 			}
 		}
 		stdIn.close();
