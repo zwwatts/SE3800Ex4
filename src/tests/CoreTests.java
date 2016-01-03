@@ -105,7 +105,7 @@ public class CoreTests {
 	
 	/** 
 	 * Test the "exp" command
-	 * @athor sorianog 
+	 * @author sorianog 
 	 */
 	@Test
 	public void expTest(){
@@ -115,6 +115,21 @@ public class CoreTests {
 		int actual = calculator.exp(numbers);
 		Assert.assertEquals(expected, actual);
 	}
-	
+	/** 
+	 * Test the "hist" command
+	 * @author sorianog 
+	 */
+	@Test
+	public void histTest(){
+		System.out.println("Testing \"hist\"...");
+		String expected = "0: MUL [22, 2, 2] => 88 \n" +
+"1: DIV [42, 3] => 14\n" + 
+"2: EXP [4, 2, 2] => 256 \n";
+		int[] mulNumbers = {22, 2, 2};
+		int[] divNumbers = {42, 3};
+		int[] expNumbers = {4, 2, 2};
+		int actual = calculator.exp(numbers);
+		Assert.assertEquals(expected, actual);
+	}
 	// TODO: test "hist", "clear", "!n"
 }

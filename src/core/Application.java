@@ -8,7 +8,7 @@ public class Application {
 		boolean running = true;
 		Calculatorator calc = new Calculatorator();
 		Scanner stdIn = new Scanner(System.in);
-		ArrayList<StoredCommand> history = new ArrayList<StoredCommand>();
+		History history = new History();
 		while(running){
 			System.out.println("Ready: ");
 			String command = stdIn.nextLine();
@@ -28,7 +28,7 @@ public class Application {
 				    	}else{
 				    		numberInputs[i] = Integer.parseInt(rawInputs[i]);
 				    	}
-				    } catch (NumberFormatException nfe) {
+				    } catch (Exception nfe) {
 						System.err.println("Invalid history number detected!");
 				    };
 				}
@@ -57,9 +57,7 @@ public class Application {
 					if (history.isEmpty()){
 						System.out.println("No saved calculations!");
 					} else {
-						for(int j=0; j<history.size(); j++){
-							System.out.println(j + ": " + history.get(j));
-						}	
+						System.out.println(history.printHist());
 					}
 					break;
 				case "clear":
