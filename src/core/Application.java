@@ -62,7 +62,7 @@ public class Application {
 					}
 					break;
 				case "exit":
-					System.out.println("Exiting..");
+					System.out.println("Exiting...");
 					running = false;
 					break;
 				default:
