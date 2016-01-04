@@ -6,7 +6,6 @@ public class StoredSubCommand extends StoredCommand{
 
 	public StoredSubCommand(COMMAND_TYPE command, int commandResult, int[] commandArgs) {
 		super(command, commandResult, commandArgs);
-		// TODO Auto-generated constructor stub
 	}
 
 	@Override

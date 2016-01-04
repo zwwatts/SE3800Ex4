@@ -14,7 +14,6 @@ public abstract class StoredCommand {
 		this.result = commandResult;
 		this.numberArgs = commandArgs;
 	}
-	//TODO: we might need getters/setters?
 	
 	public abstract String toString();
 }

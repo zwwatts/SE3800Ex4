@@ -1,7 +1,5 @@
 package core;
 
-import java.util.List;
-
 /**
  * SE3800-002
  * Exercise 3
@@ -36,7 +34,6 @@ public class Calculatorator {
 		return prevResult;
 	}
 	
-	// TODO: Handle div by 0 
 	public int div(int[] numbers) throws IllegalArgumentException {
 		int prevResult = numbers[0];
 		 for(int i=1; i<numbers.length; i++){

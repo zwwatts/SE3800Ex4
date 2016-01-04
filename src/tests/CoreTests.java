@@ -98,7 +98,6 @@ public class CoreTests {
 	 */
 	@Test (expected=IllegalArgumentException.class)
 	public void divTest2() {
-		// Will modify this after div by zero is handled 
 		System.out.println("Testing \"div 1 0 0\"...");
 		int [] numbers = {1, 0 ,0};
 		calculator.div(numbers);
@@ -117,6 +116,7 @@ public class CoreTests {
 		int actual = calculator.exp(numbers);
 		Assert.assertEquals(expected, actual);
 	}
+	
 	/** 
 	 * Test the "hist" command
 	 * @author sorianog 
@@ -124,18 +124,29 @@ public class CoreTests {
 	@Test
 	public void histTest(){
 		System.out.println("Testing \"hist\"...");
-		String expected = "0: MUL [22, 2, 2] => 88\n" +
-"1: DIV [42, 3] => 14\n" + 
-"2: EXP [4, 2, 2] => 256\n";
+		String expected = "0: ADD [1, 1, 1] => 3\n" +
+				"1: SUB [3, 2, 1] => 0\n" + 
+				"2: MUL [22, 2, 2] => 88\n" +
+				"3: DIV [42, 3] => 14\n" +
+				"4: EXP [4, 2, 2] => 256\n";
+		int[] addNumbers = {1, 1, 1};
+		int[] subNumbers = {3, 2, 1};
 		int[] mulNumbers = {22, 2, 2};
 		int[] divNumbers = {42, 3};
 		int[] expNumbers = {4, 2, 2};
+		history.add(new StoredAddCommand(StoredCommand.COMMAND_TYPE.ADD, calculator.add(addNumbers), addNumbers));
+		history.add(new StoredSubCommand(StoredCommand.COMMAND_TYPE.SUB, calculator.sub(subNumbers), subNumbers));
 		history.add(new StoredMulCommand(StoredCommand.COMMAND_TYPE.MUL, calculator.mul(mulNumbers), mulNumbers));
 		history.add(new StoredDivCommand(StoredCommand.COMMAND_TYPE.DIV, calculator.div(divNumbers), divNumbers));
 		history.add(new StoredExpCommand(StoredCommand.COMMAND_TYPE.EXP, calculator.exp(expNumbers), expNumbers));
 		String actual = history.printHist();
 		Assert.assertEquals(expected, actual);
 	}
+	
+	/**
+	 * Test the "clear" command
+	 * @author wattsz
+	 */
 	@Test 
 	public void clearTest(){
 		System.out.println("Testing \"clear\"...");
@@ -151,9 +162,14 @@ public class CoreTests {
 		history.clear();
 		Assert.assertTrue(history.isEmpty());
 	}
+	
+	/**
+	 * Test the substitution command ("!n")
+	 * @author wattsz
+	 */
 	@Test 
 	public void substitutionTest(){
-		System.out.println("Testing \"substitution\"...");
+		System.out.println("Testing \"substitution (!n)\"...");
 		int expected  = 14;
 		int[] mulNumbers = {22, 2, 2};
 		int[] divNumbers = {42, 3};
@@ -164,5 +180,4 @@ public class CoreTests {
 		int actual = history.substitute("!1");
 		Assert.assertEquals(expected, actual);
 	}
-	// TODO: test "hist", "clear", "!n"
 }
