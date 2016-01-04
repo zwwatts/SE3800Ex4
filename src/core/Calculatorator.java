@@ -37,10 +37,15 @@ public class Calculatorator {
 	}
 	
 	// TODO: Handle div by 0 
-	public int div(int[] numbers) {
+	public int div(int[] numbers) throws IllegalArgumentException {
 		int prevResult = numbers[0];
 		 for(int i=1; i<numbers.length; i++){
-			 prevResult /= numbers[i];
+			 if(numbers[i] == 0){
+				 throw new IllegalArgumentException("Can't divide by 0"); 
+			 }
+			 else{
+				 prevResult /= numbers[i];
+			 }
 		 }
 		return prevResult;
 	}

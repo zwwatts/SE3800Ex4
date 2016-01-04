@@ -22,9 +22,7 @@ public class Application {
 				for (int i = 0; i < rawInputs.length; i++) {
 				    try {
 				    	if(rawInputs[i].contains("!")){
-				    		rawInputs[i] = rawInputs[i].replace("!", "");
-				    		int histNumber = Integer.parseInt(rawInputs[i]);
-				    		numberInputs[i] = history.get(histNumber).result;
+				    		numberInputs[i] = history.substitute(rawInputs[i]);
 				    	}else{
 				    		numberInputs[i] = Integer.parseInt(rawInputs[i]);
 				    	}

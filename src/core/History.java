@@ -19,8 +19,13 @@ public class History {
 	public String printHist(){
 		String histString ="";
 		for(int j=0; j<history.size(); j++){
-			histString += (j + ": " + history.get(j));
+			histString += (j + ": " + history.get(j)+"\n");
 		}
 		return histString;
+	}
+	public int substitute(String rawInput){
+		rawInput = rawInput.replace("!", "");
+		int histNumber = Integer.parseInt(rawInput);
+		return  history.get(histNumber).result;
 	}
 }
