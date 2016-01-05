@@ -101,7 +101,6 @@ public class CoreTests {
 		System.out.println("Testing \"div 1 0 0\"...");
 		int [] numbers = {1, 0 ,0};
 		calculator.div(numbers);
-		fail();
 	}
 	
 	/** 
