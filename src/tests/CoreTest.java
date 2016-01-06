@@ -13,6 +13,7 @@ public class CoreTest {
 	
 	private Calculatorator calculator;
 	private History history;
+	private Application application;
 	
 	// @author sorianog 
 	@BeforeClass
@@ -28,6 +29,7 @@ public class CoreTest {
 		System.out.println("Creating a new Calculator...");
 		calculator = new Calculatorator();
 		history = new History();
+		application = new Application();
 	}
 	
 	/** 
@@ -178,6 +180,24 @@ public class CoreTest {
 		history.add(new StoredDivCommand(StoredCommand.COMMAND_TYPE.DIV, calculator.div(divNumbers), divNumbers));
 		history.add(new StoredExpCommand(StoredCommand.COMMAND_TYPE.EXP, calculator.exp(expNumbers), expNumbers));
 		int actual = history.substitute("!1");
+		Assert.assertEquals(expected, actual);
+	}
+	
+	/**
+	 * Test the substitution command through the menu ("!n")
+	 * @author wattsz
+	 */
+	@Test 
+	public void testApplication(){
+		System.out.println("Testing \"substitution (!n)\"...");
+		int expected  = 102;
+		int[] mulNumbers = {22, 2, 2};
+		int[] divNumbers = {42, 3};
+		int[] expNumbers = {4, 2, 2};
+		history.add(new StoredMulCommand(StoredCommand.COMMAND_TYPE.MUL, calculator.mul(mulNumbers), mulNumbers));
+		history.add(new StoredDivCommand(StoredCommand.COMMAND_TYPE.DIV, calculator.div(divNumbers), divNumbers));
+		history.add(new StoredExpCommand(StoredCommand.COMMAND_TYPE.EXP, calculator.exp(expNumbers), expNumbers));
+		int actual = application.parseCommand("add !1 !0");
 		Assert.assertEquals(expected, actual);
 	}
 }

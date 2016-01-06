@@ -2,16 +2,13 @@ package core;
 
 import java.util.*;
 public class Application {
-	
-	public static void main(String[] args){
-		System.out.println("Starting Up...");
-		boolean running = true;
-		Calculatorator calc = new Calculatorator();
-		Scanner stdIn = new Scanner(System.in);
-		History history = new History();
-		while(running){
-			System.out.println("Ready: ");
-			String command = stdIn.nextLine();
+	History history;
+	Calculatorator calc;
+	public Application(){
+		history = new History();
+		calc = new Calculatorator();
+	}
+	public Integer parseCommand(String command){
 			String[] parsedCommand;
 			try {
 				parsedCommand = command.split(" ");
@@ -31,49 +28,44 @@ public class Application {
 				    };
 				}
 				switch (parsedCommand[0]) {
-				case "add":
-					System.out.println(calc.add(numberInputs));
+				case "add":					
 					history.add(new StoredAddCommand(StoredCommand.COMMAND_TYPE.ADD, calc.add(numberInputs), numberInputs));
-					break;
-				case "sub":
-					System.out.println(calc.sub(numberInputs));
+					return (Integer)(calc.add(numberInputs));
+				case "sub":					
 					history.add(new StoredSubCommand(StoredCommand.COMMAND_TYPE.SUB, calc.sub(numberInputs), numberInputs));
-					break;
-				case "mul":
-					System.out.println(calc.mul(numberInputs));
+					return (Integer)(calc.sub(numberInputs));
+				case "mul":				
 					history.add(new StoredMulCommand(StoredCommand.COMMAND_TYPE.MUL, calc.mul(numberInputs), numberInputs));
-					break;
-				case "div":
-					System.out.println(calc.div(numberInputs));
+					return (Integer)(calc.mul(numberInputs));
+				case "div":					
 					history.add(new StoredDivCommand(StoredCommand.COMMAND_TYPE.DIV, calc.div(numberInputs), numberInputs));
-					break;
+					return (Integer)(calc.div(numberInputs));
 				case "exp":
-					System.out.println(calc.exp(numberInputs));
 					history.add(new StoredExpCommand(StoredCommand.COMMAND_TYPE.EXP, calc.exp(numberInputs), numberInputs));
-					break;
+					return (Integer)(calc.exp(numberInputs));
 				case "hist":
 					if (history.isEmpty()){
 						System.out.println("No saved calculations!");
 					} else {
 						System.out.println(history.printHist());
 					}
-					break;
+					return null;
 				case "clear":
 					history.clear();
 					System.out.println("All saved calculations have been removed!");
-					break;
+					return null;
 				case "exit":
 					System.out.println("Exiting...");
-					running = false;
-					break;
+					System.exit(0);
 				default:
 					System.err.println("Invalid command detected!");
-					break;
+					return null;
 				}
 			} catch (Exception e) {
 				System.err.println("Invalid command detected!");
+				return null;
 			}
-		}
-		stdIn.close();
+		
+		
 	}
 }
