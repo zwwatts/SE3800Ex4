@@ -8,6 +8,11 @@ public class Application {
 		history = new History();
 		calc = new Calculatorator();
 	}
+	/**
+	 * @author sorianog 
+	 * @param command
+	 * @return the value of the command, null if no value
+	 */
 	public Integer parseCommand(String command){
 			String[] parsedCommand;
 			try {
