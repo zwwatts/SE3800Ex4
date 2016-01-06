@@ -15,14 +15,20 @@ public class CoreTest {
 	private History history;
 	private Application application;
 	
-	// @author sorianog 
+	/**
+	 * @author sorianog 
+	 */
 	@BeforeClass
 	public static void beforeClass(){
 		System.out.println("**********************************");
 		System.out.println("Initiating core tests...");
 	}
 	
-	// @author sorianog 
+	/**
+	 * Create new Calculatorator, History, and Application 
+	 * objects to use for testing before each test is executed
+	 * @author sorianog 
+	 */
 	@Before
 	public void beforeTests(){
 		System.out.println("**********************************");
@@ -146,6 +152,16 @@ public class CoreTest {
 	}
 	
 	/**
+	 * Test the application menu input "hist"
+	 * @author sorianog
+	 */
+	@Test
+	public void histMenuTest(){
+		System.out.println("Testing menu input \"hist\"...");
+		Assert.assertEquals(application.parseCommand("hist"), null);
+	}
+	
+	/**
 	 * Test the "clear" command
 	 * @author wattsz
 	 */
@@ -164,9 +180,15 @@ public class CoreTest {
 		history.clear();
 		Assert.assertTrue(history.isEmpty());
 	}
-	@Test
-	public void testTest(){
-		assertTrue(true);
+	
+	/**
+	 * Test the application menu input "clear"
+	 * @author sorianog
+	 */
+	@Test 
+	public void clearMenuTest() {
+		System.out.println("Testing menu input \"clear\"...");
+		Assert.assertEquals(application.parseCommand("clear"), null);		
 	}
 	
 	/**
@@ -191,12 +213,14 @@ public class CoreTest {
 	public void applicationSubstitutionTest(){
 		System.out.println("Testing \"substitution (!n)\"...");
 		int expected  = 102;
+		String subCommand = "sub 2 1";
 		String mulCommand = "mul 22 2 2";
 		String divCommand = "div 42 3";
 		String expCommand = "exp 4 2 2";
 		application.parseCommand(mulCommand);
 		application.parseCommand(divCommand);
 		application.parseCommand(expCommand);
+		application.parseCommand(subCommand);
 		int actual = application.parseCommand("add !1 !0");
 		Assert.assertEquals(expected, actual);
 	}
