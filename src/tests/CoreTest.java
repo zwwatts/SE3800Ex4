@@ -164,6 +164,10 @@ public class CoreTest {
 		history.clear();
 		Assert.assertTrue(history.isEmpty());
 	}
+	@Test
+	public void testTest(){
+		assertTrue(true);
+	}
 	
 	/**
 	 * Test the substitution command ("!n")
@@ -183,20 +187,16 @@ public class CoreTest {
 		Assert.assertEquals(expected, actual);
 	}
 	
-	/**
-	 * Test the substitution command through the menu ("!n")
-	 * @author wattsz
-	 */
-	@Test 
-	public void testApplication(){
+	@Test
+	public void applicationSubstitutionTest(){
 		System.out.println("Testing \"substitution (!n)\"...");
 		int expected  = 102;
-		int[] mulNumbers = {22, 2, 2};
-		int[] divNumbers = {42, 3};
-		int[] expNumbers = {4, 2, 2};
-		history.add(new StoredMulCommand(StoredCommand.COMMAND_TYPE.MUL, calculator.mul(mulNumbers), mulNumbers));
-		history.add(new StoredDivCommand(StoredCommand.COMMAND_TYPE.DIV, calculator.div(divNumbers), divNumbers));
-		history.add(new StoredExpCommand(StoredCommand.COMMAND_TYPE.EXP, calculator.exp(expNumbers), expNumbers));
+		String mulCommand = "mul 22 2 2";
+		String divCommand = "div 42 3";
+		String expCommand = "exp 4 2 2";
+		application.parseCommand(mulCommand);
+		application.parseCommand(divCommand);
+		application.parseCommand(expCommand);
 		int actual = application.parseCommand("add !1 !0");
 		Assert.assertEquals(expected, actual);
 	}
