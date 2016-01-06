@@ -9,7 +9,7 @@ import org.junit.*;
  * @author sorianog, wattsz
  *
  */
-public class CoreTests {
+public class CoreTest {
 	
 	private Calculatorator calculator;
 	private History history;
