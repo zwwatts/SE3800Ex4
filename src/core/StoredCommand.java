@@ -1,5 +1,9 @@
 package core;
-
+/**
+ * 
+ * @author wattsz
+ * abstract class for all of the commands
+ */
 public abstract class StoredCommand {
 
 	public static enum COMMAND_TYPE  {
