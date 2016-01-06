@@ -208,7 +208,10 @@ public class CoreTest {
 		int actual = history.substitute("!1");
 		Assert.assertEquals(expected, actual);
 	}
-	
+	/**
+	 * Test the substitution on the command line side 
+	 * @author wattsz
+	 */
 	@Test
 	public void applicationSubstitutionTest(){
 		System.out.println("Testing \"substitution (!n)\"...");
