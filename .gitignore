@@ -6,3 +6,4 @@
 pom.xml
 *.yml
 .settings
+.metadata
