@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="0" hostname="wattsz-PC" name="tests.CoreTests" skipped="0" tests="9" time="0.069" timestamp="2016-01-04T23:20:12">
+  <properties>
+    <property name="java.vendor" value="Oracle Corporation" />
+    <property name="env.USERDOMAIN_ROAMINGPROFILE" value="WATTSZ-PC" />
+    <property name="sun.java.launcher" value="SUN_STANDARD" />
+    <property name="eclipse.pdebuild.templates" value="/D:/EclipseEE/eclipse/plugins/org.eclipse.pde.build_3.9.0.v20140415-2029/templates/" />
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers" />
+    <property name="env.PROMPT" value="$P$G" />
+    <property name="os.name" value="Windows 8.1" />
+    <property name="env.FP_NO_HOST_CHECK" value="NO" />
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_25\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_25\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_25\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_25\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_25\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_25\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_25\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_25\jre\classes" />
+    <property name="env.COMPUTERNAME" value="WATTSZ-PC" />
+    <property name="env.CommonProgramW6432" value="C:\Program Files\Common Files" />
+    <property name="env.ALLUSERSPROFILE" value="C:\ProgramData" />
+    <property name="env.GTK_BASEPATH" value="C:\Program Files (x86)\GtkSharp\2.12\" />
+    <property name="sun.desktop" value="windows" />
+    <property name="java.vm.specification.vendor" value="Oracle Corporation" />
+    <property name="ant.home" value="D:\EclipseEE\eclipse\plugins\org.apache.ant_1.9.2.v201404171502" />
+    <property name="java.runtime.version" value="1.8.0_25-b18" />
+    <property name="env.HOMEPATH" value="\Users\wattsz" />
+    <property name="user.name" value="wattsz" />
+    <property name="user.language" value="en" />
+    <property name="env.windows_tracing_flags" value="3" />
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_25\jre\bin" />
+    <property name="ant.project.default-target" value="build" />
+    <property name="ant.project.name" value="calculatorator" />
+    <property name="java.version" value="1.8.0_25" />
+    <property name="env.PROCESSOR_IDENTIFIER" value="AMD64 Family 21 Model 2 Stepping 0, AuthenticAMD" />
+    <property name="user.timezone" value="America/Chicago" />
+    <property name="env.TEMP" value="C:\Users\wattsz\AppData\Local\Temp" />
+    <property name="sun.arch.data.model" value="64" />
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_25\jre\lib\endorsed" />
+    <property name="sun.cpu.isalist" value="amd64" />
+    <property name="env.HOMEDRIVE" value="C:" />
+    <property name="sun.jnu.encoding" value="Cp1252" />
+    <property name="file.encoding.pkg" value="sun.io" />
+    <property name="env.VS110COMNTOOLS" value="C:\Program Files (x86)\Microsoft Visual Studio 11.0\Common7\Tools\" />
+    <property name="ECLIPSE_HOME" value="../../EclipseEE/eclipse/" />
+    <property name="file.separator" value="\" />
+    <property name="java.specification.name" value="Java Platform API Specification" />
+    <property name="java.class.version" value="52.0" />
+    <property name="user.country" value="US" />
+    <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_25\jre" />
+    <property name="env.PSModulePath" value="C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules\" />
+    <property name="env.APPDATA" value="C:\Users\wattsz\AppData\Roaming" />
+    <property name="env.PUBLIC" value="C:\Users\Public" />
+    <property name="env.windows_tracing_logfile" value="C:\BVTBin\Tests\installpackage\csilogfile.log" />
+    <property name="java.vm.info" value="mixed mode" />
+    <property name="env.ComSpec" value="C:\WINDOWS\system32\cmd.exe" />
+    <property name="env.OS" value="Windows_NT" />
+    <property name="env.CommonProgramFiles" value="C:\Program Files\Common Files" />
+    <property name="ant.file" value="D:\SE3800\calculatorator\build.xml" />
+    <property name="os.version" value="6.3" />
+    <property name="env.ProgramW6432" value="C:\Program Files" />
+    <property name="path.separator" value=";" />
+    <property name="java.vm.version" value="25.25-b02" />
+    <property name="user.variant" value="" />
+    <property name="env.USERPROFILE" value="C:\Users\wattsz" />
+    <property name="ant.library.dir" value="D:\EclipseEE\eclipse\plugins\org.apache.ant_1.9.2.v201404171502\lib" />
+    <property name="junit.output.dir" value="junit" />
+    <property name="env.JAVA_HOME" value="C:\Program Files\Java\jdk1.8.0_25" />
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob" />
+    <property name="env.TMP" value="C:\Users\wattsz\AppData\Local\Temp" />
+    <property name="env.FPS_BROWSER_USER_PROFILE_STRING" value="Default" />
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle" />
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit" />
+    <property name="user.script" value="" />
+    <property name="eclipse.pdebuild.scripts" value="/D:/EclipseEE/eclipse/plugins/org.eclipse.pde.build_3.9.0.v20140415-2029/scripts/" />
+    <property name="user.home" value="C:\Users\wattsz" />
+    <property name="target" value="1.8" />
+    <property name="env.ProgramData" value="C:\ProgramData" />
+    <property name="env.SESSIONNAME" value="Console" />
+    <property name="env.ProgramFiles(x86)" value="C:\Program Files (x86)" />
+    <property name="java.specification.vendor" value="Oracle Corporation" />
+    <property name="java.vendor.url" value="http://java.oracle.com/" />
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_25\jre\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jdk1.8.0_25/bin/../jre/bin/server;C:/Program Files/Java/jdk1.8.0_25/bin/../jre/bin;C:/Program Files/Java/jdk1.8.0_25/bin/../jre/lib/amd64;C:\Program Files\Java\jdk1.8.0_25\bin;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files (x86)\C:\Program Files\Java\jdk1.8.0_25\bin;Microsoft SDKs\TypeScript\1.0\;D:\Git\cmd;C:\Program Files (x86)\GtkSharp\2.12\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Skype\Phone\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\nodejs\;C:\Program Files (x86)\MySQL\MySQL Fabric 1.5 &amp; MySQL Utilities 1.5\;C:\Program Files (x86)\MySQL\MySQL Fabric 1.5 &amp; MySQL Utilities 1.5\Doctrine extensions for PHP\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;D:\PostgreSQL\9.4\bin;D:\Nmap;C:\Users\wattsz\AppData\Roaming\npm;D:\EclipseEE\eclipse;;." />
+    <property name="env.NUMBER_OF_PROCESSORS" value="8" />
+    <property name="java.vm.vendor" value="Oracle Corporation" />
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment" />
+    <property name="ant.version" value="Apache Ant(TM) version 1.9.2 compiled on July 8 2013" />
+    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner tests.CoreTests filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.OutErrSummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,D:\SE3800\calculatorator\junit\TEST-tests.CoreTests.xml crashfile=D:\SE3800\calculatorator\junitvmwatcher6901847418056880065.properties propsfile=D:\SE3800\calculatorator\junit640078000115948027.properties" />
+    <property name="java.class.path" value="D:\SE3800\calculatorator\bin;D:\EclipseEE\eclipse\plugins\org.junit_4.11.0.v201303080030\junit.jar;D:\EclipseEE\eclipse\plugins\org.hamcrest.core_1.3.0.v201303031735.jar;D:\EclipseEE\eclipse\plugins\org.apache.ant_1.9.2.v201404171502\lib\ant-launcher.jar;D:\EclipseEE\eclipse\plugins\org.apache.ant_1.9.2.v201404171502\lib\ant.jar;D:\EclipseEE\eclipse\plugins\org.apache.ant_1.9.2.v201404171502\lib\ant-junit.jar;D:\EclipseEE\eclipse\plugins\org.apache.ant_1.9.2.v201404171502\lib\ant-junit4.jar" />
+    <property name="ant.file.calculatorator" value="D:\SE3800\calculatorator\build.xml" />
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
+    <property name="ant.file.type.calculatorator" value="file" />
+    <property name="env.LOGONSERVER" value="\\MicrosoftAccount" />
+    <property name="env.windir" value="C:\WINDOWS" />
+    <property name="env.PROCESSOR_ARCHITECTURE" value="AMD64" />
+    <property name="java.vm.specification.version" value="1.8" />
+    <property name="sun.os.patch.level" value="" />
+    <property name="sun.cpu.endian" value="little" />
+    <property name="env.ANDROID_NDK_PATH" value="C:\Users\wattsz\Documents\Android\ndk\android-ndk-r10d" />
+    <property name="debuglevel" value="source,lines,vars" />
+    <property name="env.ANT_HOME" value="D:\EclipseEE\eclipse\plugins\org.apache.ant_1.9.2.v201404171502" />
+    <property name="env.ProgramFiles" value="C:\Program Files" />
+    <property name="java.io.tmpdir" value="C:\Users\wattsz\AppData\Local\Temp\" />
+    <property name="env.PROCESSOR_REVISION" value="0200" />
+    <property name="eclipse.pdebuild.home" value="/D:/EclipseEE/eclipse/plugins/org.eclipse.pde.build_3.9.0.v20140415-2029/./" />
+    <property name="env.CommonProgramFiles(x86)" value="C:\Program Files (x86)\Common Files" />
+    <property name="env.VS120COMNTOOLS" value="d:\Microsoft Visual Studio 12.0\Common7\Tools\" />
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/" />
+    <property name="env.SystemRoot" value="C:\WINDOWS" />
+    <property name="env.FPS_BROWSER_APP_PROFILE_STRING" value="Internet Explorer" />
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment" />
+    <property name="os.arch" value="amd64" />
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_25\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext" />
+    <property name="user.dir" value="D:\SE3800\calculatorator" />
+    <property name="env.LOCALAPPDATA" value="C:\Users\wattsz\AppData\Local" />
+    <property name="line.separator" value="&#xd;&#xa;" />
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM" />
+    <property name="env.PATHEXT" value=".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY" />
+    <property name="env.Path" value="C:/Program Files/Java/jdk1.8.0_25/bin/../jre/bin/server;C:/Program Files/Java/jdk1.8.0_25/bin/../jre/bin;C:/Program Files/Java/jdk1.8.0_25/bin/../jre/lib/amd64;C:\Program Files\Java\jdk1.8.0_25\bin;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files (x86)\C:\Program Files\Java\jdk1.8.0_25\bin;Microsoft SDKs\TypeScript\1.0\;D:\Git\cmd;C:\Program Files (x86)\GtkSharp\2.12\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Skype\Phone\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\nodejs\;C:\Program Files (x86)\MySQL\MySQL Fabric 1.5 &amp; MySQL Utilities 1.5\;C:\Program Files (x86)\MySQL\MySQL Fabric 1.5 &amp; MySQL Utilities 1.5\Doctrine extensions for PHP\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;D:\PostgreSQL\9.4\bin;D:\Nmap;C:\Users\wattsz\AppData\Roaming\npm;D:\EclipseEE\eclipse;" />
+    <property name="basedir" value="D:\SE3800\calculatorator" />
+    <property name="ant.java.version" value="1.8" />
+    <property name="ant.core.lib" value="D:\EclipseEE\eclipse\plugins\org.apache.ant_1.9.2.v201404171502\lib\ant.jar" />
+    <property name="env.USERNAME" value="wattsz" />
+    <property name="source" value="1.8" />
+    <property name="env.SystemDrive" value="C:" />
+    <property name="file.encoding" value="Cp1252" />
+    <property name="env.USERDOMAIN" value="WATTSZ-PC" />
+    <property name="java.specification.version" value="1.8" />
+    <property name="ant.project.invoked-targets" value="CoreTests" />
+    <property name="env.PROCESSOR_LEVEL" value="21" />
+    <property name="env.VBOX_MSI_INSTALL_PATH" value="D:\Oracle\VirtualBox\" />
+  </properties>
+  <testcase classname="tests.CoreTests" name="substitutionTest" time="0.001" />
+  <testcase classname="tests.CoreTests" name="subTest" time="0.0" />
+  <testcase classname="tests.CoreTests" name="histTest" time="0.0" />
+  <testcase classname="tests.CoreTests" name="expTest" time="0.0" />
+  <testcase classname="tests.CoreTests" name="clearTest" time="0.001" />
+  <testcase classname="tests.CoreTests" name="addTest" time="0.0" />
+  <testcase classname="tests.CoreTests" name="divTest2" time="0.0" />
+  <testcase classname="tests.CoreTests" name="mulTest" time="0.0" />
+  <testcase classname="tests.CoreTests" name="divTest" time="0.0" />
+  <system-out><![CDATA[**********************************
+Initiating core tests...
+**********************************
+Creating a new Calculator...
+Testing "substitution"...
+**********************************
+Creating a new Calculator...
+Testing "sub"...
+**********************************
+Creating a new Calculator...
+Testing "hist"...
+**********************************
+Creating a new Calculator...
+Testing "exp"...
+**********************************
+Creating a new Calculator...
+Testing "clear"...
+**********************************
+Creating a new Calculator...
+Testing "add"...
+**********************************
+Creating a new Calculator...
+Testing "div 1 0 0"...
+**********************************
+Creating a new Calculator...
+Testing "mul"...
+**********************************
+Creating a new Calculator...
+Testing "div"...
+**********************************
+Testing complete!
+**********************************
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
